@@ -27,7 +27,7 @@ function Footer() {
           <div className="flex gap-3 md:w-1/3">
             <a
               className="flex items-center justify-end"
-              href="https://www.instagram.com/fala_dor_ufms?igsh=dTExYmI2djZxcG00"
+              href="https://www.instagram.com/projetofala.dor?igsh=dTExYmI2djZxcG00"
               target="_blank"
             >
               <FaInstagram size={35} color="#F58529" className="transition-transform duration-300 hover:scale-110" alt="Instagram do Grupo 6 do PET Saúde Digital" title="Siga-nos no Instagram!"/>
