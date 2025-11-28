@@ -11,7 +11,7 @@ const root = ReactDOM.createRoot(document.getElementById("root"));
 
 root.render(
   <StrictMode>
-    <BrowserRouter>
+    <BrowserRouter basename="/CaminhosDoBemEstar">
       <Toaster position="top-right" reverseOrder={false} />
       <Router />
     </BrowserRouter>
