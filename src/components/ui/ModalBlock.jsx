@@ -23,7 +23,7 @@ function ModalBlock({ text, imgSrc, imgAlt, onClick, href }) {
     >
       <p className="inter m-0 text-start">{text}</p>
       <div className="flex flex-col justify-center items-center">
-        <img src={imgSrc} alt={imgAlt} width="30px" height="30px" />
+        <img src={import.meta.env.BASE_URL + imgSrc} alt={imgAlt} width="30px" height="30px" />
       </div>
     </div>
   );

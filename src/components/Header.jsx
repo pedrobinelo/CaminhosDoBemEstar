@@ -13,7 +13,7 @@ function Header() {
         <Link to="/" title="Ir para o início">
           <img
             className="w-10 lg:w-12 transition-transform duration-300 hover:scale-110"
-            src="/assets/img/lotus.png"
+            src={import.meta.env.BASE_URL + "/assets/img/lotus.png"}
             alt="Logo do Caminhos do Bem-Estar"
           />
         </Link>
