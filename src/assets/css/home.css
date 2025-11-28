@@ -1,0 +1,30 @@
+@import url("https://fonts.googleapis.com/css2?family=Bitcount:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Pacifico&family=Quicksand:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap");
+
+#root {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  min-height: 100vh;
+  width: 100%;
+  text-align: center;
+}
+
+.pacifico {
+  font-family: "Pacifico", cursive;
+}
+
+.dark-purple {
+  background: linear-gradient(
+    1deg,
+    rgba(143, 101, 202, 1) 0%,
+    rgba(64, 1, 140, 1) 100%
+  );
+}
+
+.modal-block-bg {
+  background: linear-gradient(
+    360deg,
+    rgba(60, 59, 59, 1) 0%,
+    rgba(0, 0, 0, 1) 100%
+  );
+}
