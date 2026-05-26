@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/CaminhosDoBemEstar/static/css/main.9317ffce.css",
+    "main.js": "/CaminhosDoBemEstar/static/js/main.b7a07fae.js",
+    "static/js/453.12af5c53.chunk.js": "/CaminhosDoBemEstar/static/js/453.12af5c53.chunk.js",
+    "static/media/pain-person.png": "/CaminhosDoBemEstar/static/media/pain-person.8d389094f5ea6f29d2b4.png",
+    "static/media/yoga-woman.png": "/CaminhosDoBemEstar/static/media/yoga-woman.fe2f1e8e883bab74cfb0.png",
+    "static/media/salada-ceasar.jpg": "/CaminhosDoBemEstar/static/media/salada-ceasar.096b8f1d441c806e1c83.jpg",
+    "static/media/whatsapp.svg": "/CaminhosDoBemEstar/static/media/whatsapp.348fac8415b5df5915f7e7e6ced6ca2b.svg",
+    "static/media/instagram.svg": "/CaminhosDoBemEstar/static/media/instagram.7fc093b78869eed11c417d40c6f232c6.svg",
+    "index.html": "/CaminhosDoBemEstar/index.html",
+    "main.9317ffce.css.map": "/CaminhosDoBemEstar/static/css/main.9317ffce.css.map",
+    "main.b7a07fae.js.map": "/CaminhosDoBemEstar/static/js/main.b7a07fae.js.map",
+    "453.12af5c53.chunk.js.map": "/CaminhosDoBemEstar/static/js/453.12af5c53.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9317ffce.css",
+    "static/js/main.b7a07fae.js"
+  ]
+}
