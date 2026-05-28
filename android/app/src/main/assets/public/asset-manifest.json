@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.9317ffce.css",
+    "main.js": "/static/js/main.4cb35a8b.js",
+    "static/js/453.12af5c53.chunk.js": "/static/js/453.12af5c53.chunk.js",
+    "static/media/pain-person.png": "/static/media/pain-person.8d389094f5ea6f29d2b4.png",
+    "static/media/yoga-woman.png": "/static/media/yoga-woman.fe2f1e8e883bab74cfb0.png",
+    "static/media/salada-ceasar.jpg": "/static/media/salada-ceasar.096b8f1d441c806e1c83.jpg",
+    "static/media/whatsapp.svg": "/static/media/whatsapp.348fac8415b5df5915f7e7e6ced6ca2b.svg",
+    "static/media/instagram.svg": "/static/media/instagram.99568cb916b37842b2cbf6c71a4df4c4.svg",
+    "index.html": "/index.html",
+    "main.9317ffce.css.map": "/static/css/main.9317ffce.css.map",
+    "main.4cb35a8b.js.map": "/static/js/main.4cb35a8b.js.map",
+    "453.12af5c53.chunk.js.map": "/static/js/453.12af5c53.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.9317ffce.css",
+    "static/js/main.4cb35a8b.js"
+  ]
+}
