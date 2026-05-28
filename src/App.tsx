@@ -5,6 +5,7 @@ import Exercicios from "./pages/Exercicios";
 import Alimentacao from "./pages/Alimentacao";
 import BemEstar from "./pages/BemEstar";
 import Sobre from "./pages/Sobre";
+import AdminReceitas from "./pages/AdminReceitas";
 
 export default function App() {
   return (
@@ -15,6 +16,7 @@ export default function App() {
         <Route path="/alimentacao" element={<Alimentacao />} />
         <Route path="/bem-estar" element={<BemEstar />} />
         <Route path="/sobre" element={<Sobre />} />
+        <Route path="/admin/receitas" element={<AdminReceitas />} />
       </Routes>
     </Router>
   );
