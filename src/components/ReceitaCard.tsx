@@ -67,8 +67,9 @@ export default function ReceitaCard({ receita }: ReceitaCardProps) {
           style={{ maxHeight: expandido ? "1000px" : "6.5rem" }}
         >
           {receita.ingredientes.map((ing, index) => (
-            <li key={index} className="flex items-center">
-              <span className="mr-2 text-sm">•</span> {ing}
+            <li key={index} className="flex items-start">
+              <span className="mr-2 text-sm mt-1.5">•</span>
+              <span>{ing}</span>
             </li>
           ))}
         </ul>

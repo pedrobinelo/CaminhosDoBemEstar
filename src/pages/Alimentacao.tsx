@@ -5,9 +5,17 @@ import MobileFloatingIsland from "../components/MobileFloatingIsland";
 import DesktopHeader from "../components/DesktopHeader";
 import ReceitaCard, { Receita } from "../components/ReceitaCard";
 
-const REFEICAO_OPTIONS = ["Todos", "Café da manhã", "Lanche", "Almoço", "Jantar"];
-const OBJETIVO_OPTIONS = ["Todos", "Perda de peso", "Ganho de massa", "Saúde geral", "Vegetariano", "Vegano"];
-const TEMPO_OPTIONS = ["Todos", "< 15 min", "15-30 min", "30-60 min", "+ 60 min"];
+const DEFAULT_REFEICAO = ["Café da manhã", "Lanche", "Almoço", "Jantar"];
+const DEFAULT_OBJETIVO = ["Perda de peso", "Ganho de massa", "Saúde geral", "Vegetariano", "Vegano"];
+const DEFAULT_TEMPO = ["< 15 min", "15-30 min", "30-60 min", "+ 60 min"];
+
+function carregarCat(key: string, defaults: string[]): string[] {
+  try { 
+    return JSON.parse(localStorage.getItem(key) || "null") ?? defaults; 
+  } catch { 
+    return defaults; 
+  }
+}
 
 type Filtros = {
   busca: string;
@@ -73,6 +81,11 @@ function FiltroDropdown({
 }
 
 export default function Alimentacao() {
+  // CORREÇÃO: Os hooks useState foram movidos para dentro do componente principal
+  const [refeicaoOpts] = useState<string[]>(() => ["Todos", ...carregarCat("cat_refeicao", DEFAULT_REFEICAO)]);
+  const [objetivoOpts] = useState<string[]>(() => ["Todos", ...carregarCat("cat_objetivo", DEFAULT_OBJETIVO)]);
+  const [tempoOpts] = useState<string[]>(() => ["Todos", ...carregarCat("cat_tempo", DEFAULT_TEMPO)]);
+
   const [receitas, setReceitas] = useState<Receita[]>([]);
   const [carregando, setCarregando] = useState(true);
   const [erroConexao, setErroConexao] = useState<string | null>(null);
@@ -182,7 +195,7 @@ export default function Alimentacao() {
           <FiltroDropdown
             id="refeicao"
             label="Refeição"
-            options={REFEICAO_OPTIONS}
+            options={refeicaoOpts}
             value={filtros.refeicao}
             onChange={(v) => setFiltros((prev) => ({ ...prev, refeicao: v }))}
             aberto={dropdownAberto === "refeicao"}
@@ -191,7 +204,7 @@ export default function Alimentacao() {
           <FiltroDropdown
             id="objetivo"
             label="Objetivo"
-            options={OBJETIVO_OPTIONS}
+            options={objetivoOpts}
             value={filtros.objetivo}
             onChange={(v) => setFiltros((prev) => ({ ...prev, objetivo: v }))}
             aberto={dropdownAberto === "objetivo"}
@@ -200,7 +213,7 @@ export default function Alimentacao() {
           <FiltroDropdown
             id="tempo"
             label="Tempo"
-            options={TEMPO_OPTIONS}
+            options={tempoOpts}
             value={filtros.tempo}
             onChange={(v) => setFiltros((prev) => ({ ...prev, tempo: v }))}
             aberto={dropdownAberto === "tempo"}
