@@ -1,0 +1,7 @@
+<?xml version='1.0' encoding='utf-8'?>
+<resources>
+    <string name="app_name">Falador</string>
+    <string name="title_activity_main">Falador</string>
+    <string name="package_name">com.petgrupo6.projetofalador</string>
+    <string name="custom_url_scheme">com.petgrupo6.projetofalador</string>
+</resources>

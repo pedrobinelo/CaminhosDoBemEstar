@@ -9,7 +9,7 @@ import AdminReceitas from "./pages/AdminReceitas";
 
 export default function App() {
   return (
-    <Router>
+    <Router basename="/CaminhosDoBemEstar">
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/exercicios" element={<Exercicios />} />
