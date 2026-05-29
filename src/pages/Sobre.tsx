@@ -3,6 +3,8 @@ import MobileFloatingIsland from "../components/MobileFloatingIsland";
 import DesktopHeader from "../components/DesktopHeader";
 
 import tuannyPhoto from "../assets/integrantes/tuanny.jpeg";
+import leonardoPhoto from "../assets/integrantes/leonardo.jpeg"
+import guilhermePhoto from "../assets/integrantes/guilherme.jpeg"
 
 type TeamMember = {
   name: string;
@@ -18,12 +20,14 @@ export default function Sobre() {
       image: tuannyPhoto,
     },
     {
-      name: "Integrante 02",
-      role: "Função do integrante",
+      name: "Leonardo",
+      role: "Estudante de Engenharia da Computação",
+      image: leonardoPhoto,
     },
     {
-      name: "Integrante 03",
-      role: "Função do integrante",
+      name: "Guilherme",
+      role: "Estudante de Engenharia da Computação",
+      image: guilhermePhoto,
     },
     {
       name: "Integrante 04",

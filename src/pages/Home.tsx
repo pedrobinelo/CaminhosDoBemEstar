@@ -31,7 +31,7 @@ export default function Home() {
             
             {/* Redes Sociais */}
             <div className="mt-8 space-y-4">
-              <a href="https://wa.me/" className="group flex items-center justify-end gap-3 text-2xl font-semibold text-purple-600 transition-colors hover:text-yellow-500" target="_blank" rel="noreferrer">
+              <a href="https://whatsapp.com/channel/0029Vb7adIb72WTtJYBC2h0R" className="group flex items-center justify-end gap-3 text-2xl font-semibold text-purple-600 transition-colors hover:text-yellow-500" target="_blank" rel="noreferrer">
                 WhatsApp <WhatsappIcon aria-hidden="true" className="h-8 w-8" />
               </a>
               <a href="https://www.instagram.com/projetofala.dor/" className="group flex items-center justify-end gap-3 text-2xl font-semibold text-purple-600 transition-colors hover:text-yellow-500" target="_blank" rel="noreferrer">
