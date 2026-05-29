@@ -13,7 +13,7 @@ const menuItems: Array<{ key: TabKey; label: string; to: string }> = [
   { key: "exercicios", label: "Exercicios", to: "/exercicios" },
   { key: "alimentacao", label: "Alimentacao", to: "/alimentacao" },
   { key: "bem-estar", label: "Bem-Estar", to: "/bem-estar" },
-  { key: "sobre", label: "Sobre nos", to: "/sobre" },
+  { key: "sobre", label: "Sobre nós", to: "/sobre" },
 ];
 
 export default function MobileFloatingIsland({ activeTab }: MobileFloatingIslandProps) {

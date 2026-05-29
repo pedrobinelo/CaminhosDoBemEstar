@@ -9,11 +9,11 @@ type DesktopHeaderProps = {
 };
 
 const navItems: Array<{ key: HeaderTabKey; label: string; to: string }> = [
-  { key: "inicio", label: "Inicio", to: "/" },
-  { key: "exercicios", label: "Exercicios", to: "/exercicios" },
-  { key: "alimentacao", label: "Alimentacao", to: "/alimentacao" },
+  { key: "inicio", label: "Início", to: "/" },
+  { key: "exercicios", label: "Exercícios", to: "/exercicios" },
+  { key: "alimentacao", label: "Alimentação", to: "/alimentacao" },
   { key: "bem-estar", label: "Bem-Estar", to: "/bem-estar" },
-  { key: "sobre", label: "Sobre nos", to: "/sobre" },
+  { key: "sobre", label: "Sobre nós", to: "/sobre" },
 ];
 
 export default function DesktopHeader({ activeTab }: DesktopHeaderProps) {
