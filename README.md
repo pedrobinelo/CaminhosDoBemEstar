@@ -1,46 +1,59 @@
-# Getting Started with Create React App
+#Fala.Dor — PET Saúde
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+**Fala.Dor** is a Progressive Web App (PWA) developed as part of the **PET Saúde** university program. It is dedicated to promoting healthy habits, balanced nutrition, physical exercise routines, and overall mental health and well-being for its users.
 
-## Available Scripts
+## Quick Access
+* **Live Production App:** [Access Caminhos do Bem-Estar](https://tuannycristinef.github.io/CaminhosDoBemEstar/)
+* **Official Repository:** [GitHub - Caminhos do Bem-Estar](https://github.com/tuannycristinef/CaminhosDoBemEstar)
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Technologies & Tools
+This project was built using modern front-end development practices and tools:
+* **React + TypeScript:** User interface construction with static typing and code safety.
+* **Tailwind CSS:** Modern, utility-first, and fully responsive styling.
+* **Firebase (Firestore & Storage):** Real-time NoSQL database and cloud storage.
+* **React Router Dom:** Single Page Application (SPA) routing and navigation.
+* **GitHub Pages:** Continuous hosting and automated production deployment.
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
+---
 
-The page will reload if you make edits.\
-You will also see any lint errors in the console.
+## Getting Started (Local Development)
 
-### `npm test`
+To clone and run this project on your local development environment, follow the steps below:
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+### Prerequisites
+Make sure you have **Node.js** and **Git** installed on your machine.
 
-### `npm run build`
+### 1. Clone the repository
+```bash
+git clone [https://github.com/tuannycristinef/CaminhosDoBemEstar.git](https://github.com/tuannycristinef/CaminhosDoBemEstar.git)
+cd CaminhosDoBemEstar
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+### 2. Install dependences
+```bash
+npm install
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 3. Configure the database
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+This project relies on Firebase as its back-end service. Ensure that the Firebase configuration file (src/firebase.ts) is properly set up with your project's API keys before starting the app.
 
-### `npm run eject`
+### 4. Start the development server
 
-**Note: this is a one-way operation. Once you `eject`, you can’t go back!**
+```bash
+npm start
 
-If you aren’t satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+Open http://localhost:3000/CaminhosDoBemEstar in your browser to view the application.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
+---
 
-You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
+### Admin Panels (Content Management)
 
-## Learn More
+The application features dedicated administrative interfaces designed for the project team to add, edit, and delete content in real time directly into the database—without needing to alter the source code:
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+* **Recipes Manager** (Alimentação): /admin/alimentação
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+* **Activities Manager** (Bem-Estar): /admin/bem-estar
+
+Note for Content Managers: To select new images within the admin panels, the corresponding image files must first be added to their respective local folders in src/assets/receitas/ or src/assets/bem-estar/.
+
